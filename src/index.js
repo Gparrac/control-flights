@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
-import Dashboard from './layout/Dashboard'
-import NavBar from './layout/NavBar';
-
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>  
-    <NavBar></NavBar>
-    <Dashboard></Dashboard>    
+    <BrowserRouter>
+      <App></App>
+    </BrowserRouter>
 
   </>
 );
